@@ -147,18 +147,7 @@ end
 
   local avgNLL = -sum / #chars
   local perp = torch.exp(avgNLL)
-  print('Final perplexity: ' .. perp)
-
-  
-
---  local sum = 0.0
---  for i=1,senLen-1 do
---    sum = sum + scores[i][x[1][i+1]]
---  end
-
---  local avgNLL = -sum / senLen
---  local perp = torch.exp(avgNLL)
---  print(perp)
+  print('Final perplexity: ' .. perp .. '\n)
 
   sen = io.stdin:read("*l")
 end
